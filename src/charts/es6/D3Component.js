@@ -1,5 +1,5 @@
 import d3 from 'd3';
-import Tooltip from './common/Tooltip';
+import Tooltip from './Tooltip';
 
 export default class D3Component {
   constructor(props) {

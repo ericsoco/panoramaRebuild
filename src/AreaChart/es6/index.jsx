@@ -1,9 +1,7 @@
 import d3 from 'd3';
 import { PropTypes } from 'react';
-import D3ReactBase from '../charts/D3ReactBase';
+import { D3ReactBase } from '../../charts';
 import AreaChartD3 from './AreaChartD3';
-
-import './style.scss';
 
 export default class AreaChart extends D3ReactBase {
 
@@ -37,6 +35,7 @@ export default class AreaChart extends D3ReactBase {
 
   constructor (props) {
     super(props);
+    console.log(">>>>> AreaChart constructor");
     this.chartConstructor = AreaChartD3;
   }
 

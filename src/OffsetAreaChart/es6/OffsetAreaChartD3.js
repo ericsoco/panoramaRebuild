@@ -1,8 +1,7 @@
-import D3Component from '../charts/D3Component';
 import d3 from 'd3';
-import Axis from '../charts/common/Axis';
+import { Axis, D3Component } from '../../charts';
 
-export default class OffsetAreaChartImpls extends D3Component {
+export default class OffsetAreaChartD3 extends D3Component {
 
   willMount() {
     let {xAccessor, yAccessor, xScale, yScale, interpolate} = this.props;

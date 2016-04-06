@@ -1,10 +1,7 @@
-import React, { PropTypes } from 'react';
-import d3 from 'd3';
-import D3ReactBase from '../charts/D3ReactBase';
-import AreaChart from '../AreaChart/AreaChart.jsx';
-import OffsetAreaChartImpls from './OffsetAreaChartImpls';
-
-import './style.scss';
+import { PropTypes } from 'react';
+import { D3ReactBase } from '../../charts';
+import AreaChart from '../../AreaChart';
+import OffsetAreaChartD3 from './OffsetAreaChartD3';
 
 export default class OffsetAreaChart extends D3ReactBase {
 
@@ -35,7 +32,7 @@ export default class OffsetAreaChart extends D3ReactBase {
 
   constructor (props) {
     super(props);
-    this.chartConstructor = OffsetAreaChartImpls;
+    this.chartConstructor = OffsetAreaChartD3;
 
     // This accessor is implemented by the React component as well as the d3 chart.
     this.chartIdAccessor = props.chartIdAccessor;

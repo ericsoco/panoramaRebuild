@@ -1,6 +1,5 @@
-import D3Component from '../charts/D3Component';
 import d3 from 'd3';
-import Axis from '../charts/common/Axis';
+import { Axis, D3Component } from '../../charts';
 
 export default class AreaChartD3 extends D3Component {
 

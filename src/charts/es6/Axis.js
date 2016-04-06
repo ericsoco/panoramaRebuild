@@ -1,5 +1,15 @@
 import d3 from 'd3';
-import {axisMethods} from './props';
+
+export const axisMethods = [
+  'orient',
+  'ticks',
+  'tickValues',
+  'tickSize',
+  'innerTickSize',
+  'outerTickSize',
+  'tickPadding',
+  'tickFormat'
+];
 
 export default class Axis {
   constructor(options, scale) {

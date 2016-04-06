@@ -1,14 +1,16 @@
 {
   "name": "ItemSelector",
   "main": "./es5/index.js",
-  "scripts": {
-    "build": "babel es6 -d es5",
-    "build-map": "babel es6 -d es5 --source-maps",
-    "start": "babel es6 --watch -d es5",
-    "start-map": "babel es6 --watch -d es5 --source-maps"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stamen/panorama.git"
   },
-  "dependencies": {
-    "react": "^0.14.7"
+  "license": "ISC",
+  "scripts": {
+    "start": "babel es6 --watch -d es5 --source-maps",
+    "build": "babel es6 -d es5 --source-maps",
+    "start-no-maps": "babel es6 --watch -d es5",
+    "build-no-maps": "babel es6 -d es5"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",

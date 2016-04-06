@@ -1,5 +1,10 @@
 import d3 from 'd3';
-import {tooltipDefaultOptions} from './props';
+
+export const tooltipDefaultOptions = {
+  closeDelay: 100,
+  align: 'top center',
+  offset: [0, -10]
+};
 
 export default class Tooltip {
   constructor(element, options) {

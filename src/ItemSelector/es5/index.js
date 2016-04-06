@@ -239,3 +239,4 @@ ItemSelector.defaultProps = {
   onItemSelected: null
 };
 exports.default = ItemSelector;
+//# sourceMappingURL=index.js.map

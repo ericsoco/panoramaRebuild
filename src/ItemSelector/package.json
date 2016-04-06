@@ -1,0 +1,26 @@
+{
+  "name": "ItemSelector",
+  "main": "./es5/index.js",
+  "scripts": {
+    "build": "babel es6 -d es5",
+    "build-map": "babel es6 -d es5 --source-maps",
+    "start": "babel es6 --watch -d es5",
+    "start-map": "babel es6 --watch -d es5 --source-maps"
+  },
+  "dependencies": {
+    "react": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-0"
+    ]
+  }
+}

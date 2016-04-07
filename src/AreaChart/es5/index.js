@@ -34,7 +34,6 @@ var AreaChart = function (_D3ReactBase) {
 
     var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(AreaChart).call(this, props));
 
-    console.log(">>>>> AreaChart constructor");
     _this.chartConstructor = _AreaChartD2.default;
     return _this;
   }

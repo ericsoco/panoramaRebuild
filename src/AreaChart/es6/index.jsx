@@ -35,7 +35,6 @@ export default class AreaChart extends D3ReactBase {
 
   constructor (props) {
     super(props);
-    console.log(">>>>> AreaChart constructor");
     this.chartConstructor = AreaChartD3;
   }
 

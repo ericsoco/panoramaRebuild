@@ -5,24 +5,5 @@
     "type": "git",
     "url": "git+https://github.com/stamen/panorama.git"
   },
-  "license": "ISC",
-  "scripts": {
-    "start": "babel es6 --watch -d es5 --source-maps",
-    "build": "babel es6 -d es5 --source-maps",
-    "start-no-maps": "babel es6 --watch -d es5",
-    "build-no-maps": "babel es6 -d es5"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.6.5",
-    "babel-preset-es2015": "^6.6.0",
-    "babel-preset-react": "^6.5.0",
-    "babel-preset-stage-0": "^6.5.0"
-  },
-  "babel": {
-    "presets": [
-      "es2015",
-      "react",
-      "stage-0"
-    ]
-  }
+  "license": "ISC"
 }

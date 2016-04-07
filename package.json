@@ -16,7 +16,8 @@
     "build:dist-modules": "npm run clean:dist-modules && webpack --config ./conf/webpack.config.modules.js && babel ./src/main.js --out-file ./dist-modules/index.js",
     "publish:dist": "./.bin/publish-dist.sh",
     "analyze": "webpack --json --config ./conf/webpack.config.js | analyze-bundle-size",
-    "build-modules": "gulp"
+    "build-modules": "gulp build",
+    "dev-modules": "gulp dev"
   },
   "repository": {
     "type": "git",

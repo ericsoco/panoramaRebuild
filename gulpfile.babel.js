@@ -6,8 +6,8 @@ import babel from 'gulp-babel';
 import sourcemaps from 'gulp-sourcemaps';
 
 const basePath = './',
-  srcPath = 'es6',
-  dstPath = 'es5',
+  srcPath = 'es6/',
+  dstPath = 'es5/',
   ignoreFolders = [
     '.bin',
     '.git',
@@ -20,6 +20,7 @@ const basePath = './',
 function getFolders (dir) {
 
   /*
+  // TODO: uncomment once all components are refactored
   return fs.readdirSync(dir)
     .filter(function(file) {
       return
@@ -41,7 +42,7 @@ gulp.task('buildComponents', () => {
 
     rimraf(path.join(basePath, folder, dstPath), () => {
 
-      gulp.src(path.join(basePath, folder, srcPath, '/**'))
+      gulp.src(path.join(basePath, folder, srcPath, '**/*'))
         .pipe(sourcemaps.init())
         .pipe(babel())
         .pipe(sourcemaps.write('.'))
@@ -53,4 +54,13 @@ gulp.task('buildComponents', () => {
 
 });
 
-gulp.task('default', ['buildComponents']);
+gulp.task('watch', () => {
+
+  // TODO: only rebuild the dirty components (does gulp cache builds and take care of this for us?)
+  gulp.watch(path.join(basePath, '**', srcPath, '**/*'), ['buildComponents']);
+
+});
+
+gulp.task('dev', ['buildComponents', 'watch']);
+gulp.task('build', ['buildComponents']);
+gulp.task('default', ['dev']);

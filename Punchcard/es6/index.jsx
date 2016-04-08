@@ -145,7 +145,9 @@ const d3Punchcard = {
 
     // width of each category svg, minus padding for scrollbar,
     // with cross-browser support.
-    this.categoryNodeWidth = (categoryNodes.node().offsetWidth || categoryNodes.node().getBoundingClientRect().width) - 2.5 * this.ROW_HEIGHT;
+    let boundsRect = categoryNodes.node().getBoundingClientRect(),
+      width = boundsRect ? boundsRect.width : categoryNodes.node().offsetWidth;
+    this.categoryNodeWidth = (width || 0) - 2.5 * this.ROW_HEIGHT;
 
     // <g> for each item within each category
     let itemNodes = categoryNodes.selectAll('g')

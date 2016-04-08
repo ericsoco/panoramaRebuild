@@ -1,4 +1,4 @@
-import Queue from 'queue-async';
+import Queue from 'd3-queue';
 import CartoDBClient from 'cartodb-client';
 
 /*
@@ -20,7 +20,7 @@ export default function CartoDBLoader (userId, apiKey) {
   const cartoDBClient = new CartoDBClient(userId);
   
   /** 
-   * Use `queue-async` to defer() up an array of queries,
+   * Use `d3-queue` to defer() up an array of queries,
    * and return a Promise that is resolved when all requests have completed.
    * Accepts a list of objects formatted as { query, format }.
    */

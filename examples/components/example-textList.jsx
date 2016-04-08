@@ -1,8 +1,8 @@
 import * as React from 'react';
 import d3 from 'd3';
-import { TexturalList } from '../../src/main';
+import { TextList } from '../../';
 
-export default class TexturalListExample extends React.Component {
+export default class TextListExample extends React.Component {
 
   constructor (props) {
     super(props);
@@ -46,7 +46,7 @@ export default class TexturalListExample extends React.Component {
   // data must be an Array of Objects
   dataLoader() {
     d3.json('data/diary-entries.json', (err, rsp) => {
-      if (err) return console.error('TexturalList data loading error!');
+      if (err) return console.error('TextList data loading error!');
 
       const data = rsp.features.filter((d) => {return d.properties.name === this.selectedDiarist.name;});
 
@@ -95,8 +95,8 @@ export default class TexturalListExample extends React.Component {
     const beginDate = this.selectedDiarist.begins ? this.selectedDateFormatter(this.selectedDiarist.begins) : '';
 
     return (
-      <div className='textural-list-example'>
-        <div className='textural-list-selecteditem'>
+      <div className='text-list-example'>
+        <div className='text-list-selecteditem'>
           <h3>{this.selectedDiarist.name}</h3>
           <p className='meta'>
             <span className='meta--item'>Diary begins {beginDate}</span>
@@ -104,7 +104,7 @@ export default class TexturalListExample extends React.Component {
           </p>
         </div>
         <div className='list'>
-          <TexturalList items={this.state.data} renderItem={this.renderItem} onItemClicked={this.onItemClicked} onStoryScroll={this.onStoryScroll} {...this.listOptions} />
+          <TextList items={this.state.data} renderItem={this.renderItem} onItemClicked={this.onItemClicked} onStoryScroll={this.onStoryScroll} {...this.listOptions} />
         </div>
       </div>
     );

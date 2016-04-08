@@ -1,7 +1,7 @@
 import * as React from 'react';
 import d3 from 'd3';
 
-import { ScatterPlot } from '../../src/main';
+import { ScatterPlot } from '../../';
 
 export default class ScatterplotExample extends React.Component {
 

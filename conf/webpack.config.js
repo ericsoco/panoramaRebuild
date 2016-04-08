@@ -19,7 +19,7 @@ module.exports = {
   context: __dirname,
 
   debug: true,
-  devtool: "#source-map",
+  devtool: '#source-map',
   entry: './main.js',
 
   eslint: {
@@ -46,7 +46,7 @@ module.exports = {
       },
       'react-leaflet': 'react-leaflet',
       'topojson': 'topojson',
-      'queue-async': 'queue-async'
+      'd3-queue': 'd3-queue'
     }
   ],
 
@@ -57,8 +57,8 @@ module.exports = {
         loader: 'babel-loader',
         query: {
           cacheDirectory: true,
-          optional: ['runtime'],
-          stage: 0
+          plugins: ['transform-runtime'],
+          presets: ['stage-0']
         },
         exclude: /node_modules/
       }, {

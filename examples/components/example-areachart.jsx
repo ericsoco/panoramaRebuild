@@ -1,6 +1,6 @@
 import * as React from 'react';
 import d3 from 'd3';
-import { AreaChart, OffsetAreaChart } from '../../src/main';
+import { AreaChart, OffsetAreaChart } from '../../';
 
 export default class AreaChartExample extends React.Component {
 

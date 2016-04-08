@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ItemSelector } from '../../src/main';
+import { ItemSelector } from '../../';
 import itemSelectorData from '../data/itemSelector.json';
 
 export default class ItemSelectorExample extends React.Component {

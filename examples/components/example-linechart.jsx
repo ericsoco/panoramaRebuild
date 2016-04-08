@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { LineChart } from '../../src/main';
+import { LineChart } from '../../';
 import d3 from 'd3';
 
 export default class LineChartExample extends React.Component {

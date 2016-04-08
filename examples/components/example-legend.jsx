@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Legend } from '../../src/main';
+import { Legend } from '../../';
 
 export default class LegendExample extends React.Component {
 

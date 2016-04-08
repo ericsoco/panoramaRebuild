@@ -1,5 +1,5 @@
 import d3 from 'd3';
-import DiscreteBarChartD3 from '../DiscreteBarChart/DiscreteBarChartD3';
+import { DiscreteBarChartD3 } from '../../DiscreteBarChart';
 
 export default class HorizontalDiscreteBarChartD3 extends DiscreteBarChartD3 {
 

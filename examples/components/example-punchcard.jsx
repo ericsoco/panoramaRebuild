@@ -1,6 +1,6 @@
 import * as React from 'react';
 import d3 from 'd3';
-import { Punchcard } from '../../src/main';
+import { Punchcard } from '../../';
 
 export default class PunchcardExample extends React.Component {
 

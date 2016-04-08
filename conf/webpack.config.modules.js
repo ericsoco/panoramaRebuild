@@ -52,8 +52,8 @@ module.exports = {
         loader: 'babel-loader',
         query: {
           cacheDirectory: true,
-          optional: ['runtime'],
-          stage: 0
+          plugins: ['transform-runtime'],
+          presets: ['stage-0']
         },
         exclude: /node_modules/
       }, {

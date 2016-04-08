@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import d3 from 'd3';
 import topojson from 'topojson';
-import { MapChoropleth } from '../../src/main';
+import { MapChoropleth } from '../../';
 
 export default class D3ChoroplethExample extends Component {
   constructor () {

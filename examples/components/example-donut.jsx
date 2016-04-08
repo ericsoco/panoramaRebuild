@@ -4,13 +4,13 @@ import topojson from 'topojson';
 import { Map as Map, TileLayer, Circle } from 'react-leaflet';
 
 // our component
-import { Donut } from '../../src/main';
+import { LeafletDonut } from '../../';
 
-export default class LeafletDonutExample extends Component {
+export default class LeafletLeafletDonutExample extends Component {
   constructor() {
     super();
 
-    // Using state here to update changes to Donuts
+    // Using state here to update changes to LeafletDonuts
     // on events
     this.state = {
       selected: null,
@@ -48,7 +48,7 @@ export default class LeafletDonutExample extends Component {
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url='http://{s}.tile.osm.org/{z}/{x}/{y}.png' />
 
-          <Donut
+          <LeafletDonut
             center={[37.8, -96]}
             outerRadius={300000}
             innerRadius={100000}
@@ -59,7 +59,7 @@ export default class LeafletDonutExample extends Component {
             onMouseout={this.onMouseOutHandler.bind(this, 'donut-1')}
             onMouseover={this.onMouseOverHandler.bind(this, 'donut-1')}/>
 
-          <Donut
+          <LeafletDonut
             center={[37.8, -96]}
             outerRadius={500000}
             innerRadius={300000}
@@ -70,7 +70,7 @@ export default class LeafletDonutExample extends Component {
             onMouseout={this.onMouseOutHandler.bind(this, 'donut-2')}
             onMouseover={this.onMouseOverHandler.bind(this, 'donut-2')}/>
 
-          <Donut
+          <LeafletDonut
             center={[37.8, -96]}
             outerRadius={700000}
             innerRadius={500000}

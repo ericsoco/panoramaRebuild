@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Navigation } from '../../src/main';
+import { Navigation } from '../../';
 
 export default class NavigationExample extends React.Component {
 

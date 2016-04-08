@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { DiscreteBarChart, HorizontalDiscreteBarChart } from '../../src/main';
+import { DiscreteBarChart, HorizontalDiscreteBarChart } from '../../';
 
 export default class BarchartExample extends React.Component {
 

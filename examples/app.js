@@ -14,7 +14,7 @@ import LineChartExample from './components/example-linechart';
 import PunchcardExample from './components/example-punchcard';
 import NavigationExample from './components/example-navigation';
 import ScatterplotExample from './components/example-scatterplot';
-import TexturalListExample from './components/example-texturalList';
+import TextListExample from './components/example-textList';
 
 class App extends Component {
 
@@ -26,14 +26,6 @@ class App extends Component {
 
     this.state = {};
 
-    this.onLegendSelected = this.onLegendSelected.bind(this);
-    this.onItemSelected = this.onItemSelected.bind(this);
-    this.onChartSliderSelected = this.onChartSliderSelected.bind(this);
-
-  }
-
-  componentWillMount () {
-    //
   }
 
   render () {
@@ -48,7 +40,7 @@ class App extends Component {
         <BarChartExample />
         <h2>Choropleth</h2>
         <D3ChoroplethExample />
-        <h2><a name="donut">Donut</a></h2>
+        <h2><a name='donut'>Donut</a></h2>
         <Donut />
         <h2>IntroManager</h2>
         <IntroManagerExample />
@@ -66,8 +58,8 @@ class App extends Component {
         <NavigationExample />
         <h2>Scatter Plot</h2>
         <ScatterplotExample />
-        <h2>Textural List</h2>
-        <TexturalListExample />
+        <h2>Text List</h2>
+        <TextListExample />
       </div>
     );
 

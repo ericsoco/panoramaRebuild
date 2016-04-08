@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { IntroManager } from '../../src/main';
+import { IntroManager } from '../../';
 
 export default class IntroManagerExample extends React.Component {
 

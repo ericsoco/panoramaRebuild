@@ -4,8 +4,8 @@ import topojson from 'topojson';
 import { Map as Map, TileLayer } from 'react-leaflet';
 
 // our component
-import { LeafletChoropleth } from '../../src/main';
-import { Tooltip } from '../../src/main';
+import { LeafletChoropleth } from '../../';
+import { LeafletTooltip } from '../../';
 
 export default class LeafletChoroplethExample extends Component {
   constructor() {
@@ -75,7 +75,7 @@ export default class LeafletChoroplethExample extends Component {
             onFeatureClick={this.onClickHandler.bind(this)}
             setTooltipContent={this.setTooltipContent.bind(this)}
             selectedStyle={{color: 'red'}}>
-            <Tooltip />
+            <LeafletTooltip />
           </LeafletChoropleth>
         </Map>
       </div>

@@ -23,8 +23,6 @@ const OPTIONS = [
   'className',
 ];
 
-require('./style.scss');
-
 export default class Choropleth extends MapLayer {
   static PropTypes = {
     styler: PropTypes.func,

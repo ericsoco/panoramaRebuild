@@ -31,8 +31,8 @@ module.exports = {
         loader: 'babel-loader',
         query: {
           cacheDirectory: true,
-          optional: ['runtime'],
-          stage: 0
+          plugins: ['transform-runtime'],
+          presets: ['stage-0']
         },
         exclude: /node_modules/
       },
@@ -51,7 +51,7 @@ module.exports = {
         loader: 'file?name=[name].[ext]',
         exclude: /node_modules/
       },
-      { test: /\.json$/, loader: "json-loader" }
+      { test: /\.json$/, loader: 'json-loader' }
     ],
     preLoaders: [
       {

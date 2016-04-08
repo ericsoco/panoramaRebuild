@@ -4,18 +4,18 @@
   "description": "Panorama visualization toolkit",
   "main": "index.js",
   "scripts": {
-    "start": "npm run clean:examples && webpack-dev-server --config ./examples/webpack.config.js --hot --inline --content-base examples/public",
+    "start": "npm run clean:examples && webpack-dev-server --config ./_examples/webpack.config.js --hot --inline --content-base _examples/public",
     "test": "jest",
     "lint": "eslint ./src",
-    "build:examples": "npm run clean:examples && webpack --config ./examples/webpack.config.ghpage.js",
-    "clean:examples": "rm -rf ./examples/public/examples.*",
+    "build:examples": "npm run clean:examples && webpack --config ./_examples/webpack.config.ghpage.js",
+    "clean:examples": "rm -rf ./_examples/public/examples.*",
     "publish:examples": "./.bin/publish-examples.sh",
-    "build:dist": "npm run clean:dist && webpack --config ./conf/webpack.config.dist.js && webpack --config ./conf/webpack.config.dist.min.js",
+    "build:dist": "npm run clean:dist && webpack --config ./_conf/webpack.config.dist.js && webpack --config ./_conf/webpack.config.dist.min.js",
     "clean:dist": "rm -rf ./dist/**",
     "clean:dist-modules": "rm -rf ./dist-modules/**",
-    "build:dist-modules": "npm run clean:dist-modules && webpack --config ./conf/webpack.config.modules.js && babel ./src/main.js --out-file ./dist-modules/index.js",
+    "build:dist-modules": "npm run clean:dist-modules && webpack --config ./_conf/webpack.config.modules.js && babel ./src/main.js --out-file ./dist-modules/index.js",
     "publish:dist": "./.bin/publish-dist.sh",
-    "analyze": "webpack --json --config ./conf/webpack.config.js | analyze-bundle-size",
+    "analyze": "webpack --json --config ./_conf/webpack.config.js | analyze-bundle-size",
     "build-modules": "gulp build",
     "dev-modules": "gulp dev"
   },
@@ -39,7 +39,7 @@
       "jsx",
       "json"
     ],
-    "scriptPreprocessor": "<rootDir>/lib/preprocessor.js",
+    "scriptPreprocessor": "<rootDir>/_test/lib/preprocessor.js",
     "testPathDirs": [
       "<rootDir>/src"
     ],

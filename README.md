@@ -95,7 +95,7 @@ The Panorama toolkit comprises a number of components that can be used individua
 
 Developing new components and modifying existing components requires intermediate knowledge of JavaScript and [React](https://facebook.github.io/react/), as well as basic familiarity with [npm](https://npmjs.com/). To get started, clone this repo, `cd` into the root directory, and install all necessary modules via `npm install`.
 
-All components are in the `src/` folder; examples of components are in the `examples/components/` folder. Note that American Panorama components are written in ES6 and use Babel to transpile to ES5 JavaScript. Luke Hoban offers [clear examples of features new in ES6](https://github.com/lukehoban/es6features); Mozilla Developer Network provides a [solid reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference).
+All components are in the `src/` folder; examples of components are in the `_examples/components/` folder. Note that American Panorama components are written in ES6 and use Babel to transpile to ES5 JavaScript. Luke Hoban offers [clear examples of features new in ES6](https://github.com/lukehoban/es6features); Mozilla Developer Network provides a [solid reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference).
 
 
 #### 1. Add the component
@@ -122,7 +122,7 @@ Try to avoid adding any but the most basic styles to your component's `style.scs
 
 #### 2. Add an example and documentation
 
-Add an example for your component to `examples/`. Create a React component in `examples/components/` that will load and display your new component. Pass any required and optional props into your new component from this file. Then, `import` your example component into [`examples/app.js`](./examples/app.js).
+Add an example for your component to `_examples/`. Create a React component in `_examples/components/` that will load and display your new component. Pass any required and optional props into your new component from this file. Then, `import` your example component into [`_examples/app.js`](./_examples/app.js).
 
 Add documentation for your component as a `README.md` within your component's folder (`src/MyComponent/`).
 

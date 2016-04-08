@@ -5,4 +5,4 @@
 Simple scatter plot chart.
 
 #### Usage
-see example file [here](../../examples/components/example-scatterplot.jsx) for usage.
+see example file [here](../../_examples/components/example-scatterplot.jsx) for usage.

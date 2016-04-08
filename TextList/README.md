@@ -5,4 +5,4 @@
 A list of text entries that will send scroll updates when top most entry in the viewport changes.
 
 #### Usage
-see example file [here](../../examples/components/example-texturalList.jsx) for usage.
+see example file [here](../../_examples/components/example-texturalList.jsx) for usage.

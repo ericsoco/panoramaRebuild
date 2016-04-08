@@ -11,8 +11,8 @@ const basePath = './',
   ignoreFolders = [
     '.bin',
     '.git',
-    'conf',
-    'examples',
+    '_conf',
+    '_examples',
     'lib',
     'node_modules'
   ];
@@ -26,7 +26,7 @@ function getFolders (dir) {
         ignoreFolders.indexOf(file) === -1 &&
         fs.statSync(path.join(dir, file)).isDirectory()
       );
-      
+
     });
 
 }

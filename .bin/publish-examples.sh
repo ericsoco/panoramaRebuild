@@ -15,7 +15,7 @@ confirm () {
 
 build () {
 	npm run build:examples
-	./node_modules/.bin/git-directory-deploy --directory examples/public
+	./node_modules/.bin/git-directory-deploy --directory _examples/public
 }
 
 confirm "This will rebuild and deploy the examples page. Are you sure? [y/N]" && build

@@ -27,7 +27,7 @@ coverage
 build/Release
 
 # Examples
-examples
+_examples
 
 .bin
 .babelrc

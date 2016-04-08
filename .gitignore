@@ -8,7 +8,7 @@ node_modules
 # built stuff
 **/es5
 dist-modules
-examples/public/examples.*
+_examples/public/examples.*
 
 # OSX, pleeze.
 .DS_Store

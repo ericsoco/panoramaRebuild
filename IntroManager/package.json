@@ -5,5 +5,9 @@
     "type": "git",
     "url": "git+https://github.com/stamen/panorama.git"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.14.8",
+    "intro.js": "^1.1.1"
+  }
 }

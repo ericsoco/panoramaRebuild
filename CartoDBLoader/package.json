@@ -5,5 +5,9 @@
     "type": "git",
     "url": "git+https://github.com/stamen/panorama.git"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cartodb-client": "stamen/cartodb-client",
+    "d3-queue": "^2.0.3"
+  }
 }

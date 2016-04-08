@@ -21,13 +21,13 @@ function getFolders (dir) {
 
   return fs.readdirSync(dir)
     .filter(function (file) {
+
       return (
         ignoreFolders.indexOf(file) === -1 &&
         fs.statSync(path.join(dir, file)).isDirectory()
       );
+      
     });
- 
-  // return ['AreaChart', 'ItemSelector', 'OffsetAreaChart'];
 
 }
 

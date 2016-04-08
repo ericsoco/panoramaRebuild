@@ -1,5 +1,5 @@
 import React, { PropTypes, Component } from 'react';
-import ReactDom from 'react-dom';
+import ReactDOM from 'react-dom';
 import TextListItem from './TextListItem';
 
 export default class TextList extends Component {
@@ -31,7 +31,7 @@ export default class TextList extends Component {
   }
 
   componentDidMount () {
-    this.listContainer = ReactDom.findDOMNode(this.refs.list);
+    this.listContainer = ReactDOM.findDOMNode(this.refs.list);
     this.listContainer.addEventListener('scroll', this.handleScroll, false);;
   }
 

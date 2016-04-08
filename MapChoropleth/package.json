@@ -1,0 +1,9 @@
+{
+  "name": "MapChoropleth",
+  "main": "./es5/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stamen/panorama.git"
+  },
+  "license": "ISC"
+}

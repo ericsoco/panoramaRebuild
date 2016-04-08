@@ -10,7 +10,7 @@
     "build-modules": "gulp build",
     "dev-modules": "gulp dev",
     "publish-modules": "",
-    "build-examples": "npm run clean:examples && webpack --config ./_examples/webpack.config.ghpage.js",
+    "build-examples": "npm run clean-examples && webpack --config ./_examples/webpack.config.ghpage.js",
     "dev-examples": "npm run build-modules; npm run clean-examples && webpack-dev-server --config ./_examples/webpack.config.js --hot --inline --content-base _examples/public",
     "publish-examples": "./_build-conf/publish-examples.sh",
     "clean-examples": "rm -rf ./_examples/public/examples.*"

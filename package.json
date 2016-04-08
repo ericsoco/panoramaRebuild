@@ -74,14 +74,26 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "cartodb-client": "stamen/cartodb-client",
-    "d3": "^3.5.16",
-    "d3-queue": "^2.0.3",
-    "intro.js": "^1.1.1",
-    "leaflet": "^0.7.7",
-    "react": "^0.14.8",
-    "react-dom": "^0.14.8",
-    "react-leaflet": "^0.10.2",
-    "react-modal": "^0.6.1"
+    "AreaChart": "file:AreaChart",
+    "CartoDBLoader": "file:CartoDBLoader",
+    "CartoDBTileLayer": "file:CartoDBTileLayer",
+    "ChartSlider": "file:ChartSlider",
+    "DiscreteBarChart": "file:DiscreteBarChart",
+    "HashManager": "file:HashManager",
+    "HorizontalDiscreteBarChart": "file:HorizontalDiscreteBarChart",
+    "IntroManager": "file:IntroManager",
+    "ItemSelector": "file:ItemSelector",
+    "LeafletChoropleth": "file:LeafletChoropleth",
+    "LeafletDonut": "file:LeafletDonut",
+    "LeafletTooltip": "file:LeafletTooltip",
+    "Legend": "file:Legend",
+    "LineChart": "file:LineChart",
+    "MapChoropleth": "file:MapChoropleth",
+    "Navigation": "file:Navigation",
+    "OffsetAreaChart": "file:OffsetAreaChart",
+    "Punchcard": "file:Punchcard",
+    "ScatterPlot": "file:ScatterPlot",
+    "TextList": "file:TextList",
+    "TimeBasedMarkers": "file:TimeBasedMarkers"
   }
 }

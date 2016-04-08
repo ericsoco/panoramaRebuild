@@ -14,7 +14,7 @@ confirm () {
 }
 
 build () {
-	npm run build:examples
+	npm run build-examples
 	./node_modules/.bin/git-directory-deploy --directory _examples/public
 }
 

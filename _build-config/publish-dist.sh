@@ -17,23 +17,13 @@ build () {
     # push up any local commits to avoid squashing
     git push
 
-    # rebuild dist and commit to clean git working directory
-    npm run build:dist
-    git add .
-    git commit -m "Rebuild dist for npm version update"
+    # rebuild modules
+    npm run build-modules
 
     # create a version update (tag) commit
     npm version patch
 
-    # get the commit message from the tag commit
-    local PATCHMSG="$(git log --format=%B -1)"
-
-    # squash the dist rebuild and version update commits
-    git reset --hard HEAD~2
-    git merge --squash HEAD@{1}
-    git commit --m "${PATCHMSG}"
-
-    # push the squashed commit
+    # push the version patch
     git push
 
     # publish the new version to npm

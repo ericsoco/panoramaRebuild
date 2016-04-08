@@ -36,4 +36,4 @@ export default class DiscreteBarChart extends D3ReactBase {
   };
 }
 
-export DiscreteBarChartD3;
+export DiscreteBarChartD3 from './DiscreteBarChartD3';

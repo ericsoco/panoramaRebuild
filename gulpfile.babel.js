@@ -19,17 +19,15 @@ const basePath = './',
 
 function getFolders (dir) {
 
-  /*
-  // TODO: uncomment once all components are refactored
   return fs.readdirSync(dir)
-    .filter(function(file) {
-      return
+    .filter(function (file) {
+      return (
         ignoreFolders.indexOf(file) === -1 &&
-        fs.statSync(path.join(dir, file)).isDirectory();
+        fs.statSync(path.join(dir, file)).isDirectory()
+      );
     });
-  */
  
-  return ['AreaChart', 'ItemSelector', 'OffsetAreaChart'];
+  // return ['AreaChart', 'ItemSelector', 'OffsetAreaChart'];
 
 }
 
